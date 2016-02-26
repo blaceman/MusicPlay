@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="eag-nn-nfF">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="S3v-il-cdN">
+                        <barButtonItem key="rightBarButtonItem" image="1.png" style="plain" id="CuQ-np-wZh">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wDW-lb-eRG">
+                                <rect key="frame" x="288" y="11" width="16" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="music.png"/>
+                                <state key="highlighted" image="music-s.png"/>
+                            </button>
+                            <connections>
+                                <segue destination="8SR-Xt-Zjm" kind="push" id="fcX-6h-6Q5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="528" y="678"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ASs-5Y-VF1">
+            <objects>
+                <viewController id="8SR-Xt-Zjm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m2L-2a-Frs"/>
+                        <viewControllerLayoutGuide type="bottom" id="L3D-gg-Azf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B4y-0H-lhR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="guh-OC-sAM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SWA-TM-Owa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="964" y="678"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cRF-ZV-Aoz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eag-nn-nfF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gQV-VO-uQj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8J4-k7-Meu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ox-Jt-JNQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119" y="678"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1.png" width="222" height="330"/>
+        <image name="music-s.png" width="128" height="128"/>
+        <image name="music.png" width="128" height="128"/>
+    </resources>
+</document>
